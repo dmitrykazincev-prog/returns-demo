@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Возврат товара · учебный прототип</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="phone">
+    <div class="status-bar" role="img" aria-label="Демонстрационная строка iPhone: 9:41, условные индикаторы связи, Wi-Fi и батареи; это не данные устройства" title="Статичная имитация: значения не относятся к устройству">
+      <span aria-hidden="true">9:41</span>
+      <span class="status-indicators" aria-hidden="true">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="currentColor"><rect x="1" y="10" width="3" height="5" rx="1"/><rect x="6" y="7" width="3" height="8" rx="1"/><rect x="11" y="4" width="3" height="11" rx="1"/><rect x="16" y="1" width="3" height="14" rx="1"/></svg>
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 5a12 12 0 0 1 16 0M5 8a8 8 0 0 1 10 0M8 11a3 3 0 0 1 4 0"/><circle cx="10" cy="14" r="1" fill="currentColor" stroke="none"/></svg>
+        <svg width="28" height="16" viewBox="0 0 28 16" fill="none" stroke="currentColor" stroke-width="1"><rect x="1" y="2" width="23" height="12" rx="3"/><rect x="3" y="4" width="16" height="8" rx="1" fill="currentColor" stroke="none"/><path d="M26 6v4" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+    </div>
+    <header><button class="icon" id="back" aria-label="Назад"><svg width="6" height="10" viewBox="10 8 6 10" aria-hidden="true" focusable="false"><path d="M15.4364 17.2364C15.0849 17.5879 14.5151 17.5879 14.1636 17.2364L10.5636 13.6364C10.2121 13.2849 10.2121 12.7151 10.5636 12.3636L14.1636 8.7636C14.5151 8.41213 15.0849 8.41213 15.4364 8.7636C15.7879 9.11507 15.7879 9.68492 15.4364 10.0364L12.4728 13L15.4364 15.9636C15.7879 16.3151 15.7879 16.8849 15.4364 17.2364Z"/></svg></button><h1>Возврат товара</h1><button class="icon" id="help" aria-label="О прототипе"><img src="assets/Svg-ico/chat.svg" alt=""></button></header>
+    <button class="link leave-draft" id="leave-draft" hidden>Сохранить черновик и выйти</button>
+    <nav id="steps" aria-label="Этапы возврата"></nav>
+    <div class="content-viewport">
+    <main id="content" tabindex="-1"></main>
+    <div id="reason-tools" hidden><button type="button" class="icon" id="to-top" aria-label="Наверх" aria-controls="content" tabindex="-1" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><path d="M15.4364 17.2364C15.0849 17.5879 14.5151 17.5879 14.1636 17.2364L10.5636 13.6364C10.2121 13.2849 10.2121 12.7151 10.5636 12.3636L14.1636 8.7636C14.5151 8.41213 15.0849 8.41213 15.4364 8.7636C15.7879 9.11507 15.7879 9.68492 15.4364 10.0364L12.4728 13L15.4364 15.9636C15.7879 16.3151 15.7879 16.8849 15.4364 17.2364Z" transform="rotate(90 13 13)"/></svg></button></div>
+    </div>
+    <footer><div id="summary" aria-live="polite"></div><button class="primary" id="next" aria-describedby="summary"></button></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div><button class="secondary" id="close-modal">Закрыть</button></dialog>
+</body>
+</html>
